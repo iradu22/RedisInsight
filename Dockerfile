@@ -78,7 +78,7 @@ RUN yarn --cwd ./redisinsight/api autoclean --force
 
 COPY ./docker-entry.sh ./
 RUN chmod +x docker-entry.sh
-
+USER roo
 EXPOSE 5000
 
 ENTRYPOINT ["./docker-entry.sh", "node", "redisinsight/api/dist/src/main"]
