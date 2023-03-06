@@ -81,7 +81,3 @@ RUN chmod +x docker-entry.sh
 EXPOSE 5000
 
 ENTRYPOINT ["./docker-entry.sh", "node", "redisinsight/api/dist/src/main"]
-
-
-
-redis-sentinel-node-2.redis-sentinel-headless.redis.svc.cluster.local:6379
